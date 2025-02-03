@@ -4,6 +4,8 @@ iOS and iPadOS app, minimum OS version is 16+
 Architecture: MVVM-ish
 Language: Swift 6 with async/await modern concurrency
 
+<img src="http://github.com/user-attachments/assets/0c40e51d-5035-4346-8a8d-bb681ca7a8a3" width="240" />  <img src="http://github.com/user-attachments/assets/3516917e-4541-417f-b3b2-b43fcd949893" width="240" />
+
 ## Assumptions
 
 Both light and dark UI modes are supported.
