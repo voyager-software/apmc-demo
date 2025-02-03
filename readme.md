@@ -15,9 +15,14 @@ https://github.com/user-attachments/assets/34616bf0-fb85-49b5-8063-1081ac31cdde
 ## Assumptions
 
 Both light and dark UI modes are supported.
+
 Based on the wording of the Tech Excerisde, I did not add a full sceen video player. 
-Video player is show on the Episode Details screen. In order to support both interface orientations I opted for a scroll view on this screen.
+Video player is shown on the Episode Details screen. 
+
+In order to support both interface orientations I opted for a scroll view on this screen.
+
 Video player has a placeholder image in case videoUrl cannot be constructed from the provided string. 
+
 A loading indicator displayed while the video is buffering. 
 
 # APMCCore
