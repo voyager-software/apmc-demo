@@ -1,6 +1,6 @@
 //
 //  PlayerManager.swift
-//  APMCDemo
+//  APMCCore
 //
 //  Created by Gabor Shaio on 2025-02-02.
 //
@@ -8,15 +8,19 @@
 import AVFoundation
 import Combine
 
-final class PlayerManager: @unchecked Sendable {
-    // MARK: Internal
+public final class PlayerManager: @unchecked Sendable {
+    // MARK: Lifecycle
 
-    let onPaybackReady = PassthroughSubject<Void, Never>()
-    let onPaybackStarted = PassthroughSubject<Void, Never>()
-    let onPaybackPaused = PassthroughSubject<Void, Never>()
-    let onPaybackFailed = PassthroughSubject<String?, Never>()
+    public init() {}
 
-    func addObservers(player: AVPlayer) {
+    // MARK: Public
+
+    public let onPaybackReady = PassthroughSubject<Void, Never>()
+    public let onPaybackStarted = PassthroughSubject<Void, Never>()
+    public let onPaybackPaused = PassthroughSubject<Void, Never>()
+    public let onPaybackFailed = PassthroughSubject<String?, Never>()
+
+    public func addObservers(player: AVPlayer) {
         self.statusObserver = player.currentItem?.observe(\.status) { [weak self] item, _ in
             guard let self else { return }
 
@@ -56,14 +60,17 @@ final class PlayerManager: @unchecked Sendable {
                 print("Status: Playing")
                 self.onPaybackStarted.send(())
             }
+
+            print("Player observers added")
         }
     }
 
-    func removeObservers() {
+    public func removeObservers() {
         self.statusObserver?.invalidate()
         self.statusObserver = nil
         self.rateObserver?.invalidate()
         self.rateObserver = nil
+        print("Player observers removed")
     }
 
     // MARK: Private

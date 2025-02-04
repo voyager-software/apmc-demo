@@ -5,14 +5,16 @@
 //  Created by Gabor Shaio on 2025-02-02.
 //
 
-public final class EpisodeListViewModel: @unchecked Sendable {
+import SwiftUI
+
+public final class EpisodeListViewModel: ObservableObject, @unchecked Sendable {
     // MARK: Lifecycle
 
     public init() {}
 
     // MARK: Public
 
-    public private(set) var episodes: [EpisodeViewModel] = []
+    @Published public private(set) var episodes: [EpisodeViewModel] = []
 
     public func load() async throws {
         let videos = try await self.svc.getVideos()

@@ -7,7 +7,7 @@
 
 import Foundation
 
-public struct EpisodeViewModel: Sendable {
+public struct EpisodeViewModel: Identifiable, Sendable {
     // MARK: Lifecycle
 
     init(video: Video) {

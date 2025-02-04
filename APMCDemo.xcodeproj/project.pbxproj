@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		143955A72D51474000100B0E /* APMCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 143955A62D51474000100B0E /* APMCCore */; };
+		14988AE82D51958A000C8EFB /* APMCCore in Frameworks */ = {isa = PBXBuildFile; productRef = 14988AE72D51958A000C8EFB /* APMCCore */; };
 		14EB8DC32D50AAD60098C223 /* readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 14EB8DC22D50AACA0098C223 /* readme.md */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		143955A42D5146D400100B0E /* APMCCore */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = APMCCore; sourceTree = "<group>"; };
+		147E194F2D51914E009E120E /* APMCDemoSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APMCDemoSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149FC6EC2D4F483A000EB792 /* APMCDemoUIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APMCDemoUIKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		149FC7022D4F483B000EB792 /* APMCDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APMCDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		149FC70C2D4F483B000EB792 /* APMCDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APMCDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -37,6 +39,11 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		147E19502D51914E009E120E /* APMCDemoSwiftUI */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = APMCDemoSwiftUI;
+			sourceTree = "<group>";
+		};
 		149FC6EE2D4F483A000EB792 /* APMCDemoUIKit */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = APMCDemoUIKit;
@@ -55,6 +62,14 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		147E194C2D51914E009E120E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14988AE82D51958A000C8EFB /* APMCCore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		149FC6E92D4F483A000EB792 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -92,6 +107,7 @@
 			children = (
 				143955A42D5146D400100B0E /* APMCCore */,
 				149FC6EE2D4F483A000EB792 /* APMCDemoUIKit */,
+				147E19502D51914E009E120E /* APMCDemoSwiftUI */,
 				149FC7052D4F483B000EB792 /* APMCDemoTests */,
 				149FC70F2D4F483B000EB792 /* APMCDemoUITests */,
 				14EB8DC22D50AACA0098C223 /* readme.md */,
@@ -106,6 +122,7 @@
 				149FC6EC2D4F483A000EB792 /* APMCDemoUIKit.app */,
 				149FC7022D4F483B000EB792 /* APMCDemoTests.xctest */,
 				149FC70C2D4F483B000EB792 /* APMCDemoUITests.xctest */,
+				147E194F2D51914E009E120E /* APMCDemoSwiftUI.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -113,6 +130,29 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		147E194E2D51914E009E120E /* APMCDemoSwiftUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 147E195C2D51914F009E120E /* Build configuration list for PBXNativeTarget "APMCDemoSwiftUI" */;
+			buildPhases = (
+				147E194B2D51914E009E120E /* Sources */,
+				147E194C2D51914E009E120E /* Frameworks */,
+				147E194D2D51914E009E120E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				147E19502D51914E009E120E /* APMCDemoSwiftUI */,
+			);
+			name = APMCDemoSwiftUI;
+			packageProductDependencies = (
+				14988AE72D51958A000C8EFB /* APMCCore */,
+			);
+			productName = APMCDemoSwiftUI;
+			productReference = 147E194F2D51914E009E120E /* APMCDemoSwiftUI.app */;
+			productType = "com.apple.product-type.application";
+		};
 		149FC6EB2D4F483A000EB792 /* APMCDemoUIKit */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 149FC7152D4F483B000EB792 /* Build configuration list for PBXNativeTarget "APMCDemoUIKit" */;
@@ -192,6 +232,9 @@
 				LastSwiftUpdateCheck = 1620;
 				LastUpgradeCheck = 1620;
 				TargetAttributes = {
+					147E194E2D51914E009E120E = {
+						CreatedOnToolsVersion = 16.2;
+					};
 					149FC6EB2D4F483A000EB792 = {
 						CreatedOnToolsVersion = 16.2;
 					};
@@ -220,6 +263,7 @@
 			projectRoot = "";
 			targets = (
 				149FC6EB2D4F483A000EB792 /* APMCDemoUIKit */,
+				147E194E2D51914E009E120E /* APMCDemoSwiftUI */,
 				149FC7012D4F483B000EB792 /* APMCDemoTests */,
 				149FC70B2D4F483B000EB792 /* APMCDemoUITests */,
 			);
@@ -227,6 +271,13 @@
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		147E194D2D51914E009E120E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		149FC6EA2D4F483A000EB792 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -252,6 +303,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		147E194B2D51914E009E120E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		149FC6E82D4F483A000EB792 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -289,6 +347,62 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		147E195A2D51914F009E120E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"APMCDemoSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.apmc.APMCDemoSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		147E195B2D51914F009E120E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"APMCDemoSwiftUI/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = ca.apmc.APMCDemoSwiftUI;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		149FC7162D4F483B000EB792 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -525,6 +639,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		147E195C2D51914F009E120E /* Build configuration list for PBXNativeTarget "APMCDemoSwiftUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				147E195A2D51914F009E120E /* Debug */,
+				147E195B2D51914F009E120E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		149FC6E72D4F483A000EB792 /* Build configuration list for PBXProject "APMCDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -565,6 +688,10 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		143955A62D51474000100B0E /* APMCCore */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = APMCCore;
+		};
+		14988AE72D51958A000C8EFB /* APMCCore */ = {
 			isa = XCSwiftPackageProductDependency;
 			productName = APMCCore;
 		};
